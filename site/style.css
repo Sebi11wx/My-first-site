@@ -2,18 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #312f2d, #1a1716);
+    display: grid;
+  place-items: center;
+  min-height: 80vh;
 }
-header {
-    background-color: hsl(240, 100%, 50%);
-    color: hsl(0, 0%, 100%);
-    padding: 20px;
-    text-align: center;
-}
+
 .text {
     padding: 40px;
     font-size: 45px;
-    color: hsla(204, 73%, 44%, 0.904);
+    color: hsla(204, 30%, 64%, 0.904);
     text-align: center;
     padding-bottom: 0px;    
      font-family: 'Satoshi', sans-serif;
@@ -29,33 +26,18 @@ header {
     font-family: 'Satoshi', sans-serif;
     font-size: 50px;
 }
-body {
-  font-family: 'Rubik', sans-serif;
-}
-
-
-
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-  font-family: Arial, sans-serif;
-  display: grid;
-  place-items: center;
-  min-height: 80vh;
-}
-
-main { width: 100%; max-width: 500px; }
+main { width: 100%; max-width: 1300px; }
 
 h1 { font-size: 85px; font-weight: 500; margin-bottom: 6px; }
 .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
 
-
-
 label { font-size: 25px; color: #888; display: block; margin-bottom: 6px; }
 
 input[type="text"] {
-  width: 100%;
+  width: 120%;
   padding:  10px;
   border: 1px solid #302d2d;
   border-radius: 10px;
@@ -67,67 +49,7 @@ input[type="text"]:focus { border-color: #999; }
 
 .formats { display: flex; gap: 9px; margin-bottom: 1.25rem; }
 
-.fmt.active {
- /* From Uiverse.io by barisdogansutcu */ 
- 
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: rgb(56, 50, 50);
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
 
-.fmt.active:hover {
-  letter-spacing: 3px;
-  background-color: hsl(265, 5%, 50%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(53, 52, 56) 0px 7px 29px 0px;
-}
-
-.fmt.active:active {
-  letter-spacing: 3px;
-  background-color: hsl(260, 7%, 49%);
-  color: hsl(0, 7%, 24%);
-  box-shadow: rgb(106, 102, 114) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
-
-.fmt {
- /* From Uiverse.io by barisdogansutcu */ 
- 
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: rgb(56, 50, 50);
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
-
-.fmt:hover {
-  letter-spacing: 3px;
-  background-color: hsl(264, 8%, 53%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(68, 65, 71) 0px 7px 29px 0px;
-}
-
-.fmt:active {
-  letter-spacing: 3px;
-  background-color: hsl(266, 6%, 21%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(76, 74, 80) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
 
 
 
@@ -152,7 +74,7 @@ input[type="text"]:focus { border-color: #999; }
 }
 .progress-fill {
   height: 100%;
-  background: #c5b522;
+  background: #43c522;
   border-radius: 4px;
   width: 10%;
   transition: width 0.4s ease;
@@ -177,22 +99,22 @@ input[type="text"]:focus { border-color: #999; }
 
 .card {
   background: #272424;
-  border: 3px solid #302d2d;
+  border: 2px solid #302d2d;
   border-radius: 12px;
   padding: 40px;
-  margin-bottom: 60px;
     margin: 0 auto;
   width: 100%;
   max-width: 445px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header {
-   background: linear-gradient(135deg, #222324, #3a3f3a);
+   background: linear-gradient(135deg, #366fa8, #3ea53e);
     color: hsla(111, 8%, 64%, 0.815);
     padding: 285px;
     text-align: center;
     max-width: 20000px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -200,15 +122,12 @@ input[type="text"]:focus { border-color: #999; }
 }
 
 .texts {
-    color: hsla(205, 8%, 57%, 0.904);
-    text-align: center;
-    font-size: 25px;
-    padding: 0 20px;
+    color: hsla(204, 18%, 84%, 0.904);
+     text-align: center;
+    font-size: 45px;
     font-family: 'Satoshi', sans-serif;
     margin-top: 70px;
-     margin-bottom: 155px;
-     margin-left: 40px;
-     margin-right: 40px;
+     margin-bottom: 105px;
 }
 
 .highlight {
@@ -220,8 +139,8 @@ input[type="text"]:focus { border-color: #999; }
   background: linear-gradient(to right, #53b1c2, #3bf664);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 1070px;
   font-size: 30px;
+ 
 }
 
 .gradient-texts {
@@ -239,11 +158,11 @@ input[type="text"]:focus { border-color: #999; }
   border-radius: 10px;
   overflow: hidden;
   background: #3D3D3D;
-  padding: 7px;
+  padding: 5px;
   cursor: text;
   width: 100%;
-  max-width: 320px;
-  margin-top: 40px;
+  max-width: 420px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -286,8 +205,9 @@ input[type="text"]:focus { border-color: #999; }
 
 .search-icon {
   display: none;
-  width: 8px;
+  width: 14px;
   height: auto;
+  margin-left: 5px;
 }
 
 .slash-icon {
@@ -317,10 +237,9 @@ input[type="text"]:focus { border-color: #999; }
     padding: 2.0rem 5%;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: linear-gradient(to right, #222324, #3a3f3a);
+     background: linear-gradient(to right, #366fa8, #3ea53e);
     animation: 0.8s ease-out;
-    
-    
+    justify-content: space-between;
 }
 
 .navbar .logo {
@@ -329,12 +248,13 @@ input[type="text"]:focus { border-color: #999; }
     color: hsl(0, 0%, 100%);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: row;
-    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
+   margin-right: auto;
+   margin-left: 8px;
 }
 
 .home {
@@ -344,7 +264,7 @@ input[type="text"]:focus { border-color: #999; }
   border-radius: 50px;
   cursor: pointer;
   border: 0;
-  background-color: rgb(56, 50, 50);
+    background: linear-gradient(135deg, #366fa8, #502ca5);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -375,12 +295,13 @@ input[type="text"]:focus { border-color: #999; }
   border-radius: 50px;
   cursor: pointer;
   border: 0;
-  background-color: rgb(56, 50, 50);
+    background: linear-gradient(135deg, #366fa8, #513ea5);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 20px;
   transition: all 0.5s ease;
+
 }
 
 .about:hover {
@@ -400,12 +321,12 @@ input[type="text"]:focus { border-color: #999; }
 
 .contact {
  /* From Uiverse.io by barisdogansutcu */ 
-  margin-right: 8px;
+  
   padding: 12px 25px;
   border-radius: 50px;
   cursor: pointer;
   border: 0;
-  background-color: rgb(56, 50, 50);
+    background: linear-gradient(135deg, #366fa8, #5d3ea5);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -453,5 +374,118 @@ input[type="text"]:focus { border-color: #999; }
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  gap: 15px;    
+  margin-bottom: 60px;
+    margin: 0 auto;
+      background: linear-gradient(180deg, #202224, #0f110f);
+ 
+
+}
+
+footer {
+    background: linear-gradient(135deg, #49494d, #272525);
+    color: hsla(0, 0%, 100%, 0.815);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Satoshi', sans-serif;
+    height: 200px;
+}
+
+.radio-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-inputs label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 0.5px solid #ccc;
+  border-radius: 12px;
+ background: #33383d;
+  transition: border-color 0.15s, background 0.15s;
+  margin-bottom: 10px;
+}
+
+.radio-input:checked + .radio-tile {
+  border: 2px solid #2f3033;
+background: #33383d;
+}
+
+.radio-icon {
+  width: 34px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.radio-input:checked + .radio-tile .radio-icon {
+  color: #acb5c4;
+}
+
+.radio-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+  letter-spacing: 0.03em;
+}
+
+.radio-input:checked + .radio-tile .radio-label {
+  color: #909399;
+}
+
+label:hover .radio-tile {
+  border-color: #9ca3af;
+  background: #33383d;
+}
+
+
+.socials {
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+    background: linear-gradient(135deg, #366fa8, #5d3ea5);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 17px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    
+}
+
+.footer-text {
+    font-size: 24px;
+    color: hsla(0, 17%, 88%, 0.815);
+    margin-top: 40px;
+}
+
+.my-socials {
+    font-size: 24px;
+    color: hsla(0, 17%, 88%, 0.815);
+    margin-top: 5px;
+    margin-bottom: 26px;
 }
